@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Hef</title>
-  <style>
-    body { font-family: sans-serif; max-width: 700px; margin: 2rem auto; }
-    h1 { color: #4CAF50; }
-    a { color: #007bff; }
-  </style>
+  <title>Hefri Anesti - Portfolio</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Halo, saya Hef!</h1>
-  <p>Saya pengembang AI yang tertarik dengan kecerdasan buatan sadar diri dan kesehatan mental.</p>
-  <h2>Proyek</h2>
-  <ul>
-    <li><strong>MindCura</strong> - Asisten kesehatan mental dengan CNN + LSTM + LLM. <a href="#">Detail</a></li>
-    <li><strong>Soul Translator</strong> - Eksperimen NLP dan kesadaran buatan. <a href="#">Baca</a></li>
-  </ul>
-  <p>Kontak: <a href="mailto:hef@example.com">hef@example.com</a></p>
+  <div class="nav-dots">
+    <div class="nav-dot active" data-section="header"></div>
+    <div class="nav-dot" data-section="summary"></div>
+    <div class="nav-dot" data-section="experience"></div>
+    <div class="nav-dot" data-section="education"></div>
+    <div class="nav-dot" data-section="articles"></div>
+    <div class="nav-dot" data-section="skills"></div>
+    <div class="nav-dot" data-section="achievements"></div>
+  </div>
+
+  <div class="container">
+    <header class="header" id="header">
+      <div class="profile-img">
+        <i class="fas fa-user"></i>
+      </div>
+      <h1 id="name"></h1>
+      <p class="title" id="title"></p>
+      <div class="contact-info" id="contact"></div>
+    </header>
+
+    <section class="section" id="summary">
+      <h2><i class="fas fa-user-circle"></i> Summary</h2>
+      <p id="summary-text"></p>
+    </section>
+
+    <section class="section" id="experience">
+      <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+      <div id="experience-list"></div>
+    </section>
+
+    <section class="section" id="education">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div id="education-list"></div>
+    </section>
+
+    <section class="section" id="organizations">
+      <h2><i class="fas fa-users"></i> Organizations</h2>
+      <div id="organizations-list"></div>
+    </section>
+
+    <section class="section" id="articles">
+      <h2><i class="fab fa-medium"></i> Latest Articles</h2>
+      <div class="articles-grid" id="articles-list"></div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2><i class="fas fa-cogs"></i> Skills</h2>
+      <div id="skills-list"></div>
+    </section>
+  </div>
+
+  <script src="static/js/get_data.js"></script>
 </body>
 </html>
